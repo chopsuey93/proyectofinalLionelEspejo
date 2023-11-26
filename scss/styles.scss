@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap');
+@import"./partials/variables";
+@import"./partials/reset";
+
+
+
+body {
+    background: rgba(255, 238, 0, 0.623);
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+@font-face {
+    font-family: "firebug";
+    src: url(../fuentes/firebug.otf);
+}
+
+#check_menu,
+.navegacion label {
+    display: none;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10rem;
+}
+
+.gimnasioindex {
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+}
+
+/*------------------------------------barradenavegacion----------------------------------*/
+header {
+    background-color: rgba(48, 184, 84, 0.603);
+    width: 100%;
+    height: 16vh;
+    margin-top: 0px;
+    position: fixed;
+    text-decoration: none;
+    list-style: none;
+
+    .navegacion {
+        .barranavegacion {
+            margin-top: 1%;
+            list-style: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: medium;
+            margin-left: 53%;
+            list-style: none;
+            text-decoration: none;
+            width: 100%;
+
+            .itemnavegacion {
+                font-family: "firebug";
+                margin-right: 0.5%;
+                
+
+                &:hover {
+                    background-color: black;
+                }
+            }
+        }
+
+        span {
+            font-size: 1.6rem;
+            font-family: "firebug";
+            color: white;
+        }
+
+        .logo {
+            height: 4rem;
+            width: 10%;
+        }
+
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+/*---------------------------------------------index---------------------------------------------------*/
+.NuestroObjetivo {
+    width: 30%;
+}
+.objetivos,
+.seguimiento,
+.compromiso,
+.esfuerzo {
+    height: 50%;
+    width: 50%;
+}
+
+.cuadro,
+.cuadro1,
+.cuadro2,
+.cuadro3,
+.cuadro4 {
+    display: block;
+    border: 0.20rem solid black;
+    padding: 2rem;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1%;
+    grid-template-areas: "cuadro cuadro"
+        "cuadro cuadro"
+        "cuadro1 cuadro2"
+        "cuadro3 cuadro4"
+        "cuadro5 cuadro5"
+
+
+}
+
+.cuadro {
+    grid-area: cuadro;
+}
+
+.cuadro1 {
+    grid-area: cuadro1;
+}
+
+.cuadro2 {
+    grid-area: cuadro2;
+
+}
+
+.cuadro3 {
+    grid-area: cuadro3;
+}
+
+.cuadro4 {
+    grid-area: cuadro4;
+}
+
+.cuadro5 {
+    grid-area: cuadro5;
+    width: 100%;
+
+}
+
+.tarjetas {
+    width: 80%;
+    height: 30vh;
+    opacity: .85;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+
+
+.boton {
+    background-color: rgba(48, 184, 84, 0.603);
+    margin: 15%;
+    color: black;
+    font-family: "firebug";
+    margin: 0, 5%;
+    border-radius: 10%;
+    &:hover{
+        background-color: white;
+    }
+}
+/*------------------------------------area contacto--------------------------------*/
+
+
+.container_contacto {
+    background-image: url(/gimnasiosuperarse/imagenes/contacto.jpg);
+
+}
+
+
+
+.contacto {
+
+    padding: 10%;
+    padding-top: 20%;
+    background-color: rgba(255, 238, 0, 0.623);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.726);
+    }
+
+    .relleno {
+        margin-top: 5%;
+    }
+
+
+}
+
+
+.formulario {
+    background-color: rgba(255, 238, 0, 0.623);
+    background-size: cover;
+    margin-top: 10%;
+    margin-left: 2%;
+    display: block;
+    .contacto1,
+    .contacto2,
+    .contacto3,
+    .contacto4 {
+        margin: 1%;
+
+        display: block;
+    }
+    .enviar:hover {
+        background-color: rgba(48, 184, 84, 0.603);
+    }
+    
+    .reset:hover {
+        background-color: rgba(48, 184, 84, 0.603);
+    }
+
+}
+/*-------------------------------------actividades--------------------------------------------------*/
+.funcional,
+.abdominales,
+.musculacion,
+.hit,
+.crossfit {
+
+    margin: 1rem;
+    display: block;
+}
+
+.rutinafuncional {
+    width: 80%;
+    height: 30vh;
+    opacity: .85;
+
+}
+
+.listaA {
+    text-decoration: underline;
+}
+.seccion1,
+.seccion,
+.seccion2,
+.seccion3,
+.seccion4,
+.seccion5,
+.seccion6 {
+    border: 0.25rem solid black;
+    padding: 2rem;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%;
+    grid-template-areas: "seccion1 seccion1 seccion1 seccion1"
+        "seccion1 seccion1 seccion1 seccion1"
+        "seccion seccion seccion2 seccion2"
+        "seccion3 seccion3 seccion4 seccion4"
+        "seccion5 seccion5 seccion6 seccion6"
+        "piedepagina piedepagina piedepagina piedepagina"
+
+    ;
+}
+
+.seccion1 {
+    grid-area: seccion1;
+
+}
+
+.seccion {
+    font-size: xx-large;
+    color: black;
+    grid-area: seccion;
+}
+
+.seccion2 {
+    grid-area: seccion2;
+}
+
+.seccion3 {
+    grid-area: seccion3;
+}
+
+.seccion4 {
+    grid-area: seccion4;
+}
+
+.seccion5 {
+    grid-area: seccion5;
+}
+
+.seccion6 {
+    grid-area: seccion6;
+}
+
+.piedepagina {
+    grid-area: piedepagina;
+}
+
+
+/*--------------------------------------------------planes-----------------------*/
+.planes {
+    padding-top: 20%;
+}
+
+.promociones {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 5%;
+    padding: 5%;
+    background-image: url(/gimnasiosuperarse/imagenes/promociones.jpg);
+
+    .promocion {
+        width: 40%;
+        border: 1% solid black;
+        padding: 5%;
+        text-align: center;
+        background-color: #f9f9f9;
+        margin: 5%;
+
+        a {
+            text-decoration: none;
+            background-color: #333;
+            color: white;
+            padding: 5% 10%;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: rgba(48, 184, 84, 0.603);
+
+            }
+        }
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.horario {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 5%;
+    background-color: white;
+
+    .hora,
+    .dia,
+    .clase {
+        flex-basis: calc(100% / 6);
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+
+        &:hover {
+            background-color: rgba(48, 184, 84, 0.603);
+        }
+    }
+
+    .hora {
+        background-color: #555;
+        color: white;
+        font-weight: bold;
+    }
+
+    .dia {
+        background-color: #333;
+        color: white;
+    }
+}
+/*-----------------------------------nuestro espacio---------------------------------------------------------*/
+.nuestroespacio {
+    padding-top: 20%;
+    margin-left: 5%;
+    
+
+
+.clase:hover {
+    background-color: white;
+}}
+
+#carouselExample {
+    padding: 5%;
+}
+
+.ubicacion {
+
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.maps {
+    width: 80%;
+    padding-bottom: 2%;
+    height: 80vh;
+
+}
+
+/*--------------------------------------------pie de pagina-------------------------------*/
+footer {
+    height: 25vh;
+    background: #ccc;
+    margin-bottom: 0%;
+
+    .redessociales {
+        display: block;
+
+        .logo1,
+        .logo2,
+        .logo3,
+        .logo4 {
+            margin-right: 11%;
+        }
+        a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: black;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@import"./partials/queries"
