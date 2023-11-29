@@ -5,6 +5,10 @@
     <link rel="short icon" href="/imagenes/logo.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la excelencia en fitness en nuestro gimnasio, donde la pasión por el bienestar se encuentra con instalaciones de vanguardia. Únete a nuestra comunidad dedicada y alcanza tus metas de acondicionamiento físico con entrenamientos personalizados, clases innovadoras y un ambiente motivador. Tu viaje hacia una vida más saludable comienza aquí. ¡Inspira, transforma, fortalece en nuestro gimnasio">
+    <meta name="keywords" content="Gimnasio, Fitness, Entrenamiento personalizado, Clases de fitness, Ejercicio, Salud, Bienestar, Rutinas de ejercicios, Equipamiento de gimnasio, Comunidad fitness, Vida activa, Transformación física, Entrenamiento funcional, Cardio, Levantamiento de pesas, Ejercicios aeróbicos.">
+    <!-------------------------aos------------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--bootstrap-->
 <link rel="stylesheet" href="/gimnasiosuperarse/css/bootstrap.css">
     <!-- Boxicons CSS -->
@@ -53,19 +57,19 @@
 <!----------------------------------planes en promoción-------------------------------------------------->
     <h1 class="planes">Planes de entrenamiento</h1>
     <section class="promociones">
-        <div class="promocion">
+        <div class="promocion" data-aos="fade-right">
             <h2 class="h1">Promoción 3 Días a la Semana</h2>
             <p>¡Entrena 3 días a la semana y obtén un descuento del 20% en tu membresía!</p>
             <a href="planes.html">Más detalles</a>
         </div>
 
-        <div class="promocion">
+        <div class="promocion" data-aos="fade-up">
             <h2 class="h1">Promoción 2 Días a la Semana</h2>
             <p>¡Elige tu actividad preferida a un precio especial en tu primer mes!</p>
             <a href="planes.html">Más detalles</a>
         </div>
 
-        <div class="promocion">
+        <div class="promocion" data-aos="fade-left">
             <h2 class="h1">Promoción 5 Días a la Semana</h2>
             <p>¡Esta promo te permite elegir mas de una activad de manera libre y un 30% de descuento!</p>
             <a href="planes.html">Más detalles</a>
@@ -76,7 +80,7 @@
     <h2 class="h1">Horarios</h2>
    
 
-    <div class="horario">
+    <section class="horario">
         <div class="hora"></div>
         <div class="dia">Lunes</div>
         <div class="dia">Martes</div>
@@ -115,7 +119,14 @@
 
         
         
-    </div>
+    </section>
+
+
+
+
+   
+
+
 
 
 <!----------------------------------pie de pagina-------------------------------------------------->
@@ -136,8 +147,10 @@
         </ul>
        
     </footer>
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 

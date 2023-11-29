@@ -2,7 +2,6 @@
     .grid {
         display: grid;
         grid-template-columns: 1fr;
-        /*grid-template-rows: repeat(3, 1fr);*/
         gap: 1%;
         grid-template-areas: "seccion1"
             "seccion1"
@@ -28,10 +27,10 @@
 
     .grid1 {
         display: grid;
-        grid-template-columns: 1fr;
-        /* grid-template-rows: repeat(2, 1fr);*/
+        grid-template-columns: 4fr;
         gap: 1%;
-        grid-template-areas: "cuadro"
+        grid-template-areas: 
+            "cuadro"
             "cuadro"
             "cuadro1"
             "cuadro2"
@@ -95,6 +94,7 @@
 .barranavegacion {
     display: none
 }
+
 
 #check_menu:checked~.barranavegacion {
     background-color: rgba(48, 184, 84, 0.603);
