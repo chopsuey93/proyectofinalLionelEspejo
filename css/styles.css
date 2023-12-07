@@ -32,12 +32,6 @@ h2 {
   font-size: 10rem;
 }
 
-.gimnasioindex {
-  width: 100%;
-  height: 80%;
-  margin-top: 10%;
-}
-
 /*------------------------------------barradenavegacion----------------------------------*/
 header {
   background-color: rgba(48, 184, 84, 0.603);
@@ -83,6 +77,13 @@ header .navegacion a {
 }
 
 /*---------------------------------------------index---------------------------------------------------*/
+.gimnasioindex {
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+  padding: 2%;
+}
+
 .NuestroObjetivo {
   width: 30%;
 }
@@ -102,7 +103,7 @@ header .navegacion a {
 .cuadro4 {
   display: block;
   border: 0.2rem solid black;
-  padding: 2rem;
+  padding: 2 rem;
 }
 
 .grid1 {
@@ -201,6 +202,13 @@ header .navegacion a {
 }
 
 /*-------------------------------------actividades--------------------------------------------------*/
+.imagenactividad {
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+  padding: 2%;
+}
+
 .funcional,
 .abdominales,
 .musculacion,
@@ -341,8 +349,9 @@ h2 {
 
 /*-----------------------------------nuestro espacio---------------------------------------------------------*/
 .nuestroespacio {
-  padding-top: 20%;
+  padding-top: 10%;
   margin-left: 5%;
+  text-align: center;
 }
 .nuestroespacio .clase:hover {
   background-color: white;
@@ -355,6 +364,7 @@ h2 {
 .ubicacion {
   padding-right: 10%;
   padding-left: 10%;
+  text-align: center;
 }
 
 .maps {
@@ -371,12 +381,13 @@ footer {
 }
 footer .redessociales {
   display: block;
+  text-align: center;
 }
 footer .redessociales .logo1,
 footer .redessociales .logo2,
 footer .redessociales .logo3,
 footer .redessociales .logo4 {
-  margin-right: 11%;
+  margin-left: 5%;
 }
 footer .redessociales a {
   text-decoration: none;
