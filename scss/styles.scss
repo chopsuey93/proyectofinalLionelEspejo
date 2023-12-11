@@ -482,6 +482,20 @@ footer {
     }
 
     }
+    /*------------------------error404-------------------------------------*/
+    .error-code {
+        font-size: 150px;
+        color: #e74c3c;
+      }
+      .error-message {
+        font-size: 24px;
+        color: #333;
+        margin-top: 20px;
+      }
+      .back-to-home {
+        margin-top: 20px;
+        font-size: 18px;
+      }
 
 
 @import"./partials/queries"
