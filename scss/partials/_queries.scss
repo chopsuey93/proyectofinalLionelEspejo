@@ -1,4 +1,7 @@
 @media (max-width: 600px) {
+    footer{
+        height: 30vh;
+    }
     .grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -14,6 +17,9 @@
             "piedepagina"
 
 
+    }
+    .planes {
+        padding-top: 30%;
     }
 
    
@@ -41,11 +47,24 @@
        }
 
 @media(max-width: 1300px) {
+    footer{display: flex;
+        justify-content: space-between;
+
     .redessociales il {
         display: block;
         margin-top: 2%;
+        text-align: left;
 
     }
+    .piedepagina il{
+        display: block;
+        margin-top: 2%;
+        text-align: right;
+    }
+    .logo_container{
+        display: none;
+    }
+}
     .promociones {
         display: block;
         justify-content: center;

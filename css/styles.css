@@ -41,6 +41,7 @@ header {
   position: fixed;
   text-decoration: none;
   list-style: none;
+  z-index: 1000;
 }
 header .navegacion .barranavegacion {
   margin-top: 1%;
@@ -92,7 +93,7 @@ header .navegacion a {
 .seguimiento,
 .compromiso,
 .esfuerzo {
-  height: 50%;
+  height: 52%;
   width: 40%;
 }
 
@@ -157,7 +158,9 @@ header .navegacion a {
   font-family: "firebug";
   margin: 0, 5%;
   border-radius: 10%;
+  margin-top: 2%;
   transition: all 0.5s;
+  padding-top: 2%;
 }
 .boton:hover {
   background-color: white;
@@ -283,7 +286,8 @@ header .navegacion a {
 
 /*--------------------------------------------------planes-----------------------*/
 .planes {
-  padding-top: 20%;
+  padding-top: 15%;
+  text-align: center;
 }
 
 .promociones {
@@ -315,6 +319,7 @@ header .navegacion a {
 
 h2 {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .horario {
@@ -345,6 +350,10 @@ h2 {
 .horario .dia {
   background-color: #333;
   color: white;
+}
+
+.horario2 {
+  display: none;
 }
 
 /*-----------------------------------nuestro espacio---------------------------------------------------------*/
@@ -397,13 +406,44 @@ footer .redessociales a {
 footer .redessociales a:hover {
   text-decoration: underline;
 }
+footer .piedepagina {
+  text-align: center;
+}
+footer .piedepagina .itemnavegacion {
+  font-family: "Poppins", sans-serif;
+  margin-right: 7%;
+  transition: all 0.5s;
+}
+footer .piedepagina .itemnavegacion:hover {
+  text-decoration: underline;
+}
+footer a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+footer .logo_container {
+  text-align: center;
+}
+footer .logo_container .logo {
+  width: 8%;
+}
+footer .logo_container span {
+  font-size: 1.5rem;
+}
 
 @media (max-width: 600px) {
+  footer {
+    height: 30vh;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1%;
     grid-template-areas: "seccion1" "seccion1" "seccion" "seccion2" "seccion3" "seccion4" "seccion5" "seccion6" "piedepagina";
+  }
+  .planes {
+    padding-top: 30%;
   }
   .logo1,
   .logo2,
@@ -419,9 +459,22 @@ footer .redessociales a:hover {
   }
 }
 @media (max-width: 1300px) {
-  .redessociales il {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .redessociales il {
     display: block;
     margin-top: 2%;
+    text-align: left;
+  }
+  footer .piedepagina il {
+    display: block;
+    margin-top: 2%;
+    text-align: right;
+  }
+  footer .logo_container {
+    display: none;
   }
   .promociones {
     display: block;

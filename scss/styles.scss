@@ -42,6 +42,7 @@ header {
     position: fixed;
     text-decoration: none;
     list-style: none;
+    z-index: 1000;
 
     .navegacion {
         .barranavegacion {
@@ -100,7 +101,7 @@ header {
 .seguimiento,
 .compromiso,
 .esfuerzo {
-    height: 50%;
+    height: 52%;
     width: 40%;
 }
 
@@ -169,21 +170,25 @@ header {
      transform: scale(1.1);
         
     }
+    
 }
-
-
-
-.boton {
+.boton{
     background-color: rgba(48, 184, 84, 0.603);
     margin: 15%;
     color: black;
     font-family: "firebug";
     margin: 0, 5%;
     border-radius: 10%;
+    margin-top: 2%;
     transition: all 0.5s;
+    padding-top: 2%;
     &:hover{
         background-color: $colorsecundario;
     }
+
+
+
+
 }
 /*------------------------------------area contacto--------------------------------*/
 
@@ -328,8 +333,11 @@ header {
 
 
 /*--------------------------------------------------planes-----------------------*/
+
+
 .planes {
-    padding-top: 20%;
+    padding-top: 15%;
+    text-align: center;
 }
 
 .promociones {
@@ -365,14 +373,18 @@ header {
 
 h2 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
+   
+   
 .horario {
     display: flex;
     flex-wrap: wrap;
     max-width: 80%;
     margin: 5%;
     background-color: white;
+    
 
     .hora,
     .dia,
@@ -397,6 +409,9 @@ h2 {
         background-color: #333;
         color: white;
     }
+}
+.horario2{
+    display: none;
 }
 /*-----------------------------------nuestro espacio---------------------------------------------------------*/
 .nuestroespacio {
@@ -455,6 +470,38 @@ footer {
             }
         }
     }
-}
+    .piedepagina{
+        text-align: center;
+        .itemnavegacion {
+            font-family: 'Poppins', sans-serif;
+            margin-right: 7%;
+            transition: all 0.5s;
+            &:hover {
+                text-decoration: underline;
+            }
+            
+            
+
+        }
+    }
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        
+    }
+    .logo_container{
+        text-align: center;
+        .logo{
+            width: 8%;
+        }
+        span{
+            font-size: 1.5rem;
+        }
+        
+    }
+
+    }
+
 
 @import"./partials/queries"
