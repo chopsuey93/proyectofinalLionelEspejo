@@ -205,6 +205,7 @@ header {
     padding: 10%;
     padding-top: 20%;
     background-color: rgba(255, 238, 0, 0.623);
+    transition: 1s;
 
     &:hover {
         background-color: rgba(255, 255, 255, 0.726);
@@ -216,31 +217,10 @@ header {
 
 
 }
-
-
-.formulario {
+.formulario{
     background-color: rgba(255, 238, 0, 0.623);
-    background-size: cover;
-    margin-top: 10%;
-    margin-left: 2%;
-    display: block;
-    .contacto1,
-    .contacto2,
-    .contacto3,
-    .contacto4 {
-        margin: 1%;
-
-        display: block;
-    }
-    .enviar:hover {
-        background-color: rgba(48, 184, 84, 0.603);
-    }
-    
-    .reset:hover {
-        background-color: rgba(48, 184, 84, 0.603);
-    }
-
 }
+
 /*-------------------------------------actividades--------------------------------------------------*/
 .imagenactividad{
     width: $ancho;

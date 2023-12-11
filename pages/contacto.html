@@ -64,44 +64,36 @@
 
 <!----------------------------------formulario-------------------------------------------------->
 
-    <form action="">
-        <ol class="formulario">
-
-            <il> <label for="nombre">Nombre Y Apellido</label>
-                <input type="text" name="nombre" class="contacto1">
-            </il>
-            <il><label for="number">Celular</label>
-                <input type="number" class="contacto2">
-            </il>
-            <il>
-                <label for="email">Email</label>
-                <input type="email" class="contacto3">
-            </il>
-            <il>
-                <h4>¿Que actividad te interesa?</h4>
-            </il>
-
-            <input type="radio" name="respuesta" value="musculacion">
-            <label for="opcion1">Musculación</label>
-
-            <input type="radio" name="respuesta" value="funcional">
-            <label for="opcion2">Funcional</label>
-
-            <input type="radio" name="respuesta" value="crossfit">
-            <label for="opcion3"> Crossfit</label>
-
-            <input type="radio" name="respuesta" value="hit">
-            <label for="opcion4">HIT</label>
-
-
+ 
+ <div class="container mt-5">
+    <form class="formulario">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" class="nombre" placeholder="Ingresa tu nombre">
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" class="form-control" class="email" placeholder="Ingresa tu correo electrónico">
+      </div>
+      <div class="form-group">
+        <label for="opciones">Selecciona una actividad:</label>
+        <select class="form-control" class="opciones" required>
+          <option value="">Selecciona una actividad</option>
+          <option value="opcion1">Musculación</option>
+          <option value="opcion2">Funcional</option>
+          <option value="opcion3">Crossfit</option>
+          <option value="opcion3">Hit</option>
+        </select>
+      </div>
+     
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="form-control" class="mensaje" rows="4" placeholder="Ingresa tu mensaje"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="reset" class="btn btn-secondary">Restablecer</button>
     </form>
-
-
-    <div>
-        <input type="submit" value="enviar formulario" class="enviar">
-        <input type="reset" class="reset">
-    </div>
-</ol>
+  </div>
 
     <!----------------------------------pie de pagina-------------------------------------------------->
     <footer>
@@ -147,6 +139,9 @@
             </div>
     </footer>
 </section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
