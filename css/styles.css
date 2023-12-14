@@ -308,7 +308,7 @@ header .navegacion a {
   max-width: 100%;
   margin: 5%;
   padding: 5%;
-  background-image: url(/gimnasiosuperarse/imagenes/promociones.jpg);
+  background-image: url(../imagenes/promociones.jpg);
 }
 .promociones .promocion {
   width: 40%;
