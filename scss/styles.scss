@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap');
 @import"./partials/variables";
 @import"./partials/reset";
-
-
+@import"./partials/mixin";
 
 body {
    background-image: linear-gradient(rgba(255, 238, 0, 0.623),rgba(48, 184, 84, 0.603));
@@ -30,12 +29,19 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 10rem;
 }
-
+@each $nombre, $color in $colores {
+    .#{#{$nombre}}-element {
+      background-color: $color;
+      color: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
 
 
 /*------------------------------------barradenavegacion----------------------------------*/
 header {
-    background-color: $colorprimario;
+    background-color: map-get($colores, success);
     width: $ancho;
     height: 16vh;
     margin-top: 0px;
@@ -91,8 +97,8 @@ header {
 .gimnasioindex {
     width: $ancho;
     height: 80%;
-    margin-top: 10%;
-    padding: 2%;
+    @include acomodar(2%, 10%)
+ 
 }
 .NuestroObjetivo {
     width: 30%;

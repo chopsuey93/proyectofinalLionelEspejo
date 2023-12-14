@@ -32,9 +32,37 @@ h2 {
   font-size: 10rem;
 }
 
+.primary-element {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.success-element {
+  background-color: rgba(46, 204, 112, 0.5019607843);
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.danger-element {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.warning-element {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
 /*------------------------------------barradenavegacion----------------------------------*/
 header {
-  background-color: rgba(48, 184, 84, 0.603);
+  background-color: rgba(46, 204, 112, 0.5019607843);
   width: 100%;
   height: 16vh;
   margin-top: 0px;
@@ -81,8 +109,8 @@ header .navegacion a {
 .gimnasioindex {
   width: 100%;
   height: 80%;
-  margin-top: 10%;
   padding: 2%;
+  margin-top: 10%;
 }
 
 .NuestroObjetivo {
